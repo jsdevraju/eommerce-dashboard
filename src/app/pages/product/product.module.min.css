@@ -1,0 +1,299 @@
+.product_container h2 {
+    font-size: 1.4em;
+    color: #333;
+    margin-bottom: 1.3em;
+}
+
+.product_container {
+    margin-top: 3em;
+}
+
+.filter_options {
+    background: var(--white-color);
+    padding: 1em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search {
+    flex: 1;
+}
+
+.filter_category {margin-right: 2em;margin-left: 1em;flex: 2;}
+
+.search input {
+    display: block;
+    width: 100%;
+    border-radius: 4px;
+    background: #f4f5f7;
+    border: none;
+    outline: none;
+    padding: 1em;
+}
+
+.search input:focus {
+    background: transparent;
+    outline: 2px solid #f4f5f7;
+}
+
+.filter_category {
+    background: #f4f5f7;
+    padding: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filter_category select {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.filter_category option {
+    width: 100%;
+    font-size: 1.1em;
+}
+
+.price_filter{
+    flex: 3;
+    background: #f4f5f7;
+    padding: 0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.price_filter select {
+    background: transparent;
+    outline: none;
+    border: none;
+    width: 100%;
+}
+
+.price_filter option {
+    width: 100%;
+    font-size: 1.1em;
+}
+
+
+
+.img_withContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.img_withContainer img {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    border: 2px solid #ddd;
+}
+
+.excel_file {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    background: var(--white-color);
+    margin-top: 1em;
+    padding: 1em;
+    margin-bottom: 2em;
+    border-radius: 10px;
+}
+
+.drop_file {
+    flex: 1;
+    border: 1px dotted #0e9f6e;
+    padding: 0.6em;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.drop_file label {
+    display: block;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn_grp {
+    display: flex;
+    gap: 1.4em;
+    align-items: center;
+}
+
+thead {
+    width: 100%;
+    text-align: left;
+    background: #f0f0f0;
+    padding: 1em;
+    height: 50px;
+}
+
+table.table_data {
+    width: 100%;
+    background: #fff;
+    white-space: nowrap;
+    border-collapse: collapse;
+}
+
+thead td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 1em;
+    color: #333;
+    font-weight: 400;
+}
+
+tbody tr {
+    border-bottom: 1px solid #efededdd;
+}
+
+tbody td {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: left;
+}
+
+td.Selling span {
+    background: #def7ec;
+    font-size: 0.7em;
+    color: #1ab16e;
+    padding: 0.5em;
+    border-radius: 10px;
+}
+
+td.icon svg {
+    color: #9fa3a7;
+    cursor: pointer;
+}
+
+td .actions svg {
+    color: #9fa3a7;
+    margin-right: 0.7em;
+    cursor: pointer;
+}
+
+.dark .orderInfo_card {
+    box-shadow: none;
+}
+
+.dark .orderInfo_card h3 {
+    color: #333;
+}
+
+.dark .filter_options {
+    background: #1a1c23;
+}
+
+.dark .search input {
+    background: #24262d;
+}
+
+.dark .filter_category {
+    background: #24262d;
+}
+
+.dark .filter_category select {
+    color: #fff;
+}
+.dark .filter_category select option {
+    color: #333;
+}
+
+.dark .price_filter {
+    background: #24262d;
+}
+.dark .price_filter select {
+    color: #fff;
+}
+
+.dark .price_filter select option {
+    color: #333;
+}
+
+.dark .excel_file {
+    background: #1a1c23;
+}
+
+.dark .drop_file label {
+    color: #a3a0a0;
+}
+
+.dark .table_data {
+    background: #1a1c23;
+}
+
+.dark thead {
+    background: #1a1c23;
+}
+
+.dark thead td {
+    color: #a3a0a0;
+}
+
+.dark tbody tr {
+    border-color: #383838;
+}
+
+tbody td{
+    padding: 1em;
+}
+.dark tbody td {
+    color: #838689;
+}
+
+.dark td.Selling span {
+    background: #03543f;
+    color: #fff;
+}
+
+@media (max-width:550px) {
+    .filter_options {
+        flex-direction: column;
+        gap: 1.5em;
+    }
+    
+    .search {
+        width: 100%;
+    }
+    
+    .filter_category {
+        width: 100%;
+    }
+    
+    .price_filter {
+        width: 100%;
+    }
+    
+    .excel_file {
+        flex-direction: column;
+    }
+    
+    .drop_file {
+        width: 100%;
+    }
+    
+    .btn_grp {
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .btn_grp button {
+        width: 100%;
+    }
+
+    .table_data {
+        overflow-x: auto;
+    }
+    
+    .table_item {
+        overflow: scroll;
+    }
+}

@@ -1,0 +1,32 @@
+.topbar {
+    width: 100%;
+    background: var(--white-color);
+    text-align: right;
+    box-shadow: 0px 5px 5px 5px #f3f3f3;
+}
+
+.dark .topbar {
+    background: #1a1c23;
+    box-shadow: none;
+}
+
+.profile img {
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    object-fit: cover;
+}
+
+.topbar_wrap {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.2em;
+}
+
+.topbar .container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: 69px;
+}

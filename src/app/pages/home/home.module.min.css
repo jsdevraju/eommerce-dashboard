@@ -1,0 +1,130 @@
+.revenue_card {
+    width: 350px;
+    text-align: center;
+    padding: 1em;
+    border-radius: 10px;
+    line-height: 30px;
+}
+
+.revenue_card_container {
+    display: flex;
+    gap: 1.4em;
+    flex-wrap: wrap;
+}
+
+.home_dash h3 {
+    font-size: 1.1em;
+    margin-bottom: 1.4em;
+    color: #333;
+}
+
+.dark .home_dash h3{
+    color: #fff;
+}
+
+.home_dash {
+    margin-top: 1.4em;
+}
+
+.dark .orderInfo_card {
+    box-shadow: none;
+}
+
+.dark .orderInfo_card h3 {
+    color: #333;
+}
+
+.revenue_card h2 {
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.orderInfo_card {
+    width: 250px;
+    background: var(--white-color);
+    box-shadow: 0 5px 5px 5px #f3f3f3;
+    padding: 0.7em;
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productOrder_info {
+    display: flex;
+    align-items: center;
+    gap: 2em;
+    margin-top: 2em;
+}
+
+.order_info h5 {
+    color: #5a5757;
+    font-weight: 400;
+}
+
+.order_info h3 {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin-top: 0.2em;
+}
+
+.charts {
+    display: flex;
+    gap: 1em;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.left {
+    width: 50%;
+    background: var(--white-color);
+    padding: 2em;
+    border-radius: 20px;
+}
+
+.right {
+    width: 25%;
+    background: var(--white-color);
+    padding: 2em;
+    border-radius: 20px;
+}
+
+
+@media (max-width:990px){
+    .revenue_card {
+        width: 100%;
+    }
+    
+    .orderInfo_card {
+        width: 100% !important;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .productOrder_info {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .charts {
+        flex-direction: column;
+    }
+    
+    .left {
+        width: 100%;
+    }
+    
+    .right {
+        width: 100%;
+    }
+}

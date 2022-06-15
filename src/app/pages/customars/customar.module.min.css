@@ -1,0 +1,35 @@
+section.customar {
+    padding: 3em 0px;
+}
+
+.customar_container h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 1em;
+}
+
+.dark .customar_container h3 {
+    color: #fff;
+}
+
+.search_box input {
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ddd;
+    outline: none;
+    border-radius: 4px;
+}
+
+.search_box input:focus {
+    outline: 2px solid var(--first-color);
+}
+
+.search_box {
+    box-shadow: 0px 5px 5px 5px #f3f3f3;
+    margin-bottom: 2em;
+}
+
+.dark .search_box {
+    box-shadow: none;
+}
